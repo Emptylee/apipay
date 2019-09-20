@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script type="text/javascript" src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.1.js"></script>
+    <!-- <script type="text/javascript" src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.1.js"></script> -->
     <title>跳</title>
 </head>
 <body>
-    <h1>你好123</h1>
+    <h1>你好1234</h1>
 <script>
-document.addEventListener('UniAppJSBridgeReady', function() {
-    plus.runtime.launchApplication({pname: "io.dcloud.UNI4530473"
-        , extra: { url: "" }}, function (e) {
-        console.log(JSON.stringify(e));
-        alert("Open system default browser failed: " + e.message);
-      });
-});
-// window.onload = function(){
-//     openApp("yxb://pay?scheme",goConfirmAddr)
-// } 
+// document.addEventListener('UniAppJSBridgeReady', function() {
+//     plus.runtime.launchApplication({pname: "io.dcloud.UNI4530473"
+//         , extra: { url: "" }}, function (e) {
+//         console.log(JSON.stringify(e));
+//         alert("Open system default browser failed: " + e.message);
+//       });
+// });
+window.onload = function(){
+    openApp("yxb://pay?scheme",goConfirmAddr)
+} 
 function detectVersion() {
           let isAndroid,isIOS,isIOS9,version,
               u = navigator.userAgent,
