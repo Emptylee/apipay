@@ -8,18 +8,20 @@
     <title>跳</title>
 </head>
 <body>
-    <h1>你好1234</h1>
+    <h1>你好09231553</h1>
+    <a href="javascript:;" onClick="goApp"></a>
 <script>
-// document.addEventListener('UniAppJSBridgeReady', function() {
-//     plus.runtime.launchApplication({pname: "io.dcloud.UNI4530473"
-//         , extra: { url: "" }}, function (e) {
-//         console.log(JSON.stringify(e));
-//         alert("Open system default browser failed: " + e.message);
-//       });
-// });
-window.onload = function(){
-    openApp("yxb://pay?scheme",goConfirmAddr)
-} 
+// window.onload = function(){
+//     openApp("yxb://pay?scheme",goConfirmAddr)
+// } 
+
+function goApp(){
+    setTimeout(function(){
+        alert('未安装易讯宝')
+    },4000)
+    var href = "yxb://go?url=Web&version=v2&next=" + encodeURIComponent(window.location.href);
+}
+
 function detectVersion() {
           let isAndroid,isIOS,isIOS9,version,
               u = navigator.userAgent,
