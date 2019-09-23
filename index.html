@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <script type="text/javascript" src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.1.js"></script> -->
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">   
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">   
+    <META HTTP-EQUIV="expires" CONTENT="0">
     <title>跳</title>
 </head>
 <body>
     <h1>你好09231553</h1>
-    <a href="javascript:;" onClick="goApp">检测并跳转易讯宝APP</a>
+    <a href="javascript:void(0);" onClick="goApp">检测并跳转易讯宝APP</a>
 <script>
 // window.onload = function(){
 //     openApp("yxb://pay?scheme",goConfirmAddr)
 // } 
 
 function goApp(){
+    alert('nininin')
     var href = "yxb://go?url=Web&version=v2&next=" + encodeURIComponent(window.location.href);
     setTimeout(function(){
         alert('未安装易讯宝')
