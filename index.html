@@ -10,15 +10,14 @@
     <title>跳</title>
 </head>
 <body>
-    <h1>你好lz123</h1>
+    <h1>你好yxb</h1>
     <a href="javascript:void(0);" onclick="goApp()">检测并跳转易讯宝APP</a>
 <script>
-// window.onload = function(){
-//     openApp("yxb://pay?scheme",goConfirmAddr)
-// } 
+window.onload = function(){
+    goApp()
+} 
 
 function goApp(){
-    alert('nininin')
     var href = "yxb://login?a=123";
     setTimeout(function(){
         alert('未安装易讯宝')
