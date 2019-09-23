@@ -16,10 +16,11 @@
 // } 
 
 function goApp(){
+    var href = "yxb://go?url=Web&version=v2&next=" + encodeURIComponent(window.location.href);
     setTimeout(function(){
         alert('未安装易讯宝')
     },4000)
-    var href = "yxb://go?url=Web&version=v2&next=" + encodeURIComponent(window.location.href);
+    window.location.href = href;
 }
 
 function detectVersion() {
